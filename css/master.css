@@ -4,28 +4,24 @@
  +------------------------*/
 
 /* Overwriting State of WA Styles */
-img { margin: 0; }
+img { margin: 0; border: none; }
 
-.rightmenu .col1 { 
+.rightmenu .col1 {
   width: 100%;
   padding: 0;
 }
-a:visited { color: #a38d4f; }
 
 /* Imports
 =====================================================================*/
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Droid+Serif:400,400italic,700,700italic);
 
 
 /* Fonts
 ======================================================================*/
-#content, #footer { font-family: "Droid Sans", Arial, sans-serif; }
 
 
 /* Basics
 ======================================================================*/
-a { color: #a38d4f; text-decoration: none; }
-a:hover { text-decoration: underline; color: #a38d4f; }
+
 
 
 dl, ol, p, ul, table { margin-bottom: 1.5em; }
@@ -56,13 +52,13 @@ ul { list-style: disc; }
 /* Content */
 #content {
   background: #fff;
-  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.33);
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.33);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.33);
   clear: both;
 }
+#breakdown-nav ul li {
+	margin-bottom:0;
+}
 
-#content-primary, #content-secondary, #content-tertiary { padding: 30px 30px 15px }
+#content-primary, #content-secondary, #content-tertiary { padding: 30px 30px }
 #content-secondary { background: #e3ebec; }
 #content-tertiary { background: #c5d3d7; padding-bottom: 30px; }
 
@@ -164,7 +160,10 @@ ul { list-style: disc; }
 
 /* FAQ */
 #faq { list-style: none; margin-left: 0; }
-
+#faqpage h2 {
+margin-top:1.5em !important;
+border-bottom: 1px solid #c1c1c1;
+}
 /* Footer */
 #footer { color: #7c8a9b; font-size: 12px; padding: 15px 0 0; }
 
@@ -196,6 +195,7 @@ a[class*="icon"] {
 
 /* Muted text */
 .mute { color: #777; font-size: 13px; }
+.right {text-align:right !important;}
 
 /* Search */
 #search-form { text-align: right; white-space: nowrap; margin: 15px 0;}

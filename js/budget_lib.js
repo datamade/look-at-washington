@@ -193,7 +193,7 @@ var BudgetLib = {
     }
     
     if ($('#' + itemId + '-expanded').length == 0) {
-      $('.budget-expand-img').attr('src', 'images/expand.png');
+      $('.budget-expand-img').attr('src', '/wp/wp-content/themes/responsive-child/js/statebudget-chart/images/expand.png');
       $('#breakdown .expanded-content').remove();
       $('#breakdown tr').removeClass('expanded-head');
       $('#' + itemId + ' .budget-expand-img').attr('src', 'images/collapse.png');
@@ -201,7 +201,7 @@ var BudgetLib = {
       $('#' + itemId).addClass('expanded-head');
     }
     else {
-      $('.budget-expand-img').attr('src', 'images/expand.png');
+      $('.budget-expand-img').attr('src', '/wp/wp-content/themes/responsive-child/js/statebudget-chart/images/expand.png');
       $('#breakdown .expanded-content').remove();
       $('#breakdown tr').removeClass('expanded-head');
     }

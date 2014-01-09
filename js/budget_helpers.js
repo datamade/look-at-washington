@@ -68,7 +68,7 @@ var BudgetHelpers = {
     return "\
       <tr id='" + rowId + "'>\
         <td>\
-        <a onclick='" + detailLoadFunction + "'><img class='budget-expand-img' src='images/expand.png' /></a>&nbsp;<a onclick='" + detailLoadFunction + "'>" + rowName + "</a>\
+        <a onclick='" + detailLoadFunction + "'><img class='budget-expand-img' src='/wp/wp-content/themes/responsive-child/js/statebudget-chart/images/expand.png' /></a>&nbsp;<a onclick='" + detailLoadFunction + "'>" + rowName + "</a>\
         </td>\
         <td class='num actual'>" + actual + "</td>\
         <td class='num nominal'>" + nominal + "</td>\
