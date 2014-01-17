@@ -30,7 +30,7 @@ a:hover { text-decoration: underline; color: #a38d4f; }
 
 dl, ol, p, ul, table { margin-bottom: 1.5em; }
 cite, em { font-style: italic; }
-.col1 h1 { font-size: 39px; margin: 15px 0; line-height: 1.1;}
+h1 { font-size: 39px; margin: 15px 0; line-height: 1.1;}
 h1, h2 { color: #13345a; }
 h1, h2, h3, h4, h5, h6, strong { font-weight: bold; }
 h2 { font-size: 25px; line-height: 1.2; margin-bottom: 0.3em; }
@@ -172,7 +172,7 @@ ul { list-style: disc; }
   #credit { float: right; text-align: right; }
   
   /* Sharing links */
-  .share { list-style: none; margin: 0; }
+  .share { list-style: none; margin: 0; height: 40px;}
   .share img { float: left; margin-right: 5px; }
   .share li { float: left; font-size: 11px; line-height: 1.1; width: 155px; }
   .share strong { display: block; font-size: 20px; }
