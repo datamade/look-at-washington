@@ -28,7 +28,6 @@ var BudgetHighcharts = {
         events: {
           click: function() {
             $("#readme").fadeOut("fast");
-            $.cookie("budgetbreakdownreadme", "read", { expires: 7 });
           }
         },
         defaultSeriesType: "area",
@@ -52,7 +51,6 @@ var BudgetHighcharts = {
             events: {
               click: function() {
                 $("#readme").fadeOut("fast");
-                $.cookie("budgetbreakdownreadme", "read", { expires: 7 });
                 var x = this.x,
                 y = this.y,
                 selected = !this.selected,

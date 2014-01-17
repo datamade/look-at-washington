@@ -27,15 +27,12 @@ Backbone.history.start();
 // Additional setup
 $("#search-query").ezpz_hint();
 
+$("#readme").fadeIn("fast");
+
 //cookies for first time visitors
 $("body").bind("click", function(e){
-  $.cookie("budgetbreakdownreadme", "read", { expires: 7 });
   $("#readme").fadeOut("fast");
 });
-
-if ($.cookie("budgetbreakdownreadme") != "read") {
-  $("#readme").fadeIn("fast");
-}
 
 // Firing events for search
 $("#search-query").keydown(function(e){
