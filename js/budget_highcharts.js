@@ -42,10 +42,7 @@ var BudgetHighcharts = {
       legend: {
         backgroundColor: "#ffffff",
         borderColor: "#cccccc",
-        floating: true,
-        verticalAlign: "top",
-        x: -280,
-        y: 20
+        verticalAlign: "top"
       },
       plotOptions: {
         area: { fillOpacity: 0.25 },

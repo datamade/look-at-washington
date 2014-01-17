@@ -18,84 +18,83 @@
 
 </head>
 <body>
-  <div id="content">
-    <div id="content-primary">
-      <span id="breadcrumbs"></span>
-      <div class='clear'></div>
-      <div class='l'>
-        <h1 id='budget-title'></h1>
-      </div>
-
-      <div class='r' id="search-form">
-        <input type="text" id="search-query" class="hint" title="Agency search..."/>
-        <input type="button" value="Search" id="search" class='action'/>
-      </div>
-
-      <div class='clear'></div>
-
-      <div id='main-chart'>
-        <p>Explore the State of Washington's budget from 2002 to 2013 and learn how the money is being spent. <a href="http://stateofworkingwa.org/budget/faq.html">Read more &raquo;</a></p>
-
-        <div id="timeline">
-          <h2></h2>
-          <div id="timeline-chart"></div>
-          <div id="readme"><img alt="Click points to see annual budgets below" src="images/readme.png" /></div>
+  <div id="page">
+    <div id="content">
+      <div id="content-primary">
+        <span id="breadcrumbs"></span>
+        <div class='clear'></div>
+        <div id="search-form">
+          <input type="text" id="search-query" class="hint" title="Agency search..."/>
+          <input type="button" value="Search" id="search" class='action'/>
         </div>
+        <h1 id='budget-title'></h1>
 
-        <div id="breakdown-nav"></div>
         <div class='clear'></div>
 
-        <table id="scorecard">
-          <tbody>
+        <div id='main-chart'>
+          <p>Explore the State of Washington's budget from 2002 to 2013 and learn how the money is being spent. <a href="http://stateofworkingwa.org/budget/faq.html">Read more &raquo;</a></p>
+
+          <div id="timeline">
+            <h2></h2>
+            <div id="timeline-chart"></div>
+            <div id="readme"><img alt="Click points to see annual budgets below" src="images/readme.png" /></div>
+          </div>
+
+          <div id="breakdown-nav"></div>
+          <div class='clear'></div>
+
+          <table id="scorecard">
+            <tbody>
+              <tr>
+                <td id="scorecard-desc">
+                  <h2 id="secondary-title"></h2>
+                  <p id='actual-change-percent'></p>
+                </td>
+                <td>
+                  <h2 class="actual"></h2>
+                  <p>Real (Inflation-adjusted)</p>
+                </td>
+                <td>
+                  <h2 class="nominal"></h2>
+                  <p>Nominal (Unadjusted)</p>
+                </td>
+              </tr>
+          </table>
+        </div>
+
+        <table id="breakdown">
+          <thead>
             <tr>
-              <td id="scorecard-desc">
-                <h2 id="secondary-title"></h2>
-                <p id='actual-change-percent'></p>
-              </td>
-              <td>
-                <h2 class="actual"></h2>
-                <p>Real (Inflation-adjusted)</p>
-              </td>
-              <td>
-                <h2 class="nominal"></h2>
-                <p>Nominal (Unadjusted)</p>
-              </td>
+              <th id='breakdown-item-title'><span id="secondary-title">Minor Function</span></th>
+              <th class="num"><span>Real (Inflation-adjusted)</span></th>
+              <th class="num"><span>Nominal (Unadjusted)</span></th>
             </tr>
+          </thead>
+          <tbody>
+          </tbody>
         </table>
-      </div>
 
-      <table id="breakdown">
-        <thead>
-          <tr>
-            <th id='breakdown-item-title'><span id="secondary-title">Minor Function</span></th>
-            <th class="num"><span>Real (Inflation-adjusted)</span></th>
-            <th class="num"><span>Nominal (Unadjusted)</span></th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+        <div id="pie" style="display:none;"></div>
 
-      <div id="pie" style="display:none;"></div>
+        <div id="footnotes">
+          <ul>
+            <li id="f-officers">* These budgets are controlled by the officers and offices listed even though not all expenses are incurred by the respective control officer.</li>
+            <li id="f-zero2011"><sup class="ref">&dagger;</sup> At the end of the current fiscal year, an audit will be conducted and a report issued with the final Actual for each Agency. <a href="faq.html#q3">Learn more</a></li>
+          </ul>
+        </div>
 
-      <div id="footnotes">
-        <ul>
-          <li id="f-officers">* These budgets are controlled by the officers and offices listed even though not all expenses are incurred by the respective control officer.</li>
-          <li id="f-zero2011"><sup class="ref">&dagger;</sup> At the end of the current fiscal year, an audit will be conducted and a report issued with the final Actual for each Agency. <a href="faq.html#q3">Learn more</a></li>
+        <a id="download-button" href="#faq.html">Frequently asked questions</a> | All the data for this project is freely available to <a id="download-button" href="https://www.google.com/fusiontables/DataSource?docid=1h4sjIMfqZy5d8uLCaZQnGq7RdTJevr8p0gD6GTY">download or explore</a> on Google Fusion Tables.
+
+        <br />
+        <br />
+        <ul class="share">
+
+          <li><a href="http://www.facebook.com/share.php?u=http%3a%2f%2fwww.eoionline.org%2ftrends%2fbudget%2f"><img alt="Facebook" src="images/facebook-lg.png" /> Share budget on <strong>Facebook</strong></a></li>
+
+          <li><a href="http://twitter.com/share?text=Where's%20the%20money%20going%3F%20Explore%20Washington%20State's%20budget&url=http%3a%2f%2fwww.eoionline.org%2ftrends%2fbudget%2f"><img alt="Twitter" src="images/twitter-lg.png" /> Share budget on <strong>Twitter</strong></a></li>
+
         </ul>
       </div>
-
-      <a id="download-button" href="#faq.html">Frequently asked questions</a> | All the data for this project is freely available to <a id="download-button" href="https://www.google.com/fusiontables/DataSource?docid=1h4sjIMfqZy5d8uLCaZQnGq7RdTJevr8p0gD6GTY">download or explore</a> on Google Fusion Tables.
-
-      <br />
-      <br />
-      <ul class="share">
-
-        <li><a href="http://www.facebook.com/share.php?u=http%3a%2f%2fwww.eoionline.org%2ftrends%2fbudget%2f"><img alt="Facebook" src="images/facebook-lg.png" /> Share budget on <strong>Facebook</strong></a></li>
-
-        <li><a href="http://twitter.com/share?text=Where's%20the%20money%20going%3F%20Explore%20Washington%20State's%20budget&url=http%3a%2f%2fwww.eoionline.org%2ftrends%2fbudget%2f"><img alt="Twitter" src="images/twitter-lg.png" /> Share budget on <strong>Twitter</strong></a></li>
-
-      </ul>
     </div>
   </div>
             

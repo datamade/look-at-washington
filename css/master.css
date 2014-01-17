@@ -47,7 +47,7 @@ ul { list-style: disc; }
 /* Core layout
 ======================================================================*/
 .clear { clear: both; }
-#page { margin: 0 auto; width: 980px; }
+#page { width: 850px; }
 
 /* Content */
 #content {
@@ -194,7 +194,7 @@ a[class*="icon"] {
 .mute { color: #777; font-size: 13px; }
 
 /* Search */
-#search-form { text-align: right; white-space: nowrap; margin: 15px 0;}
+#search-form { clear: both; white-space: nowrap; margin: 15px 0;}
 #search-form input { font-size: 17px; vertical-align: middle; }
 #search-form input[type=text] { padding: 0.6em; width: 13em; }
 
