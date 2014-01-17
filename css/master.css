@@ -47,14 +47,14 @@ ul { list-style: disc; }
 /* Core layout
 ======================================================================*/
 .clear { clear: both; }
-#page { width: 850px; }
+#page { 
+  width: 850px; 
+  font-size: .9em;
+}
 
 /* Content */
 #content {
   background: #fff;
-  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.33);
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.33);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.33);
   clear: both;
 }
 
