@@ -306,7 +306,7 @@ var BudgetLib = {
         var actual = rows[i][2];
 
         if (actual > 0)
-          pie_array.push({name: rowName, y: actual});
+          pie_array.push({name: rowName, y: parseInt(actual)});
         
         var rowId = BudgetHelpers.convertToSlug(rowName);
         var detailLoadFunction = "BudgetLib.getFundDetails(\"" + BudgetHelpers.convertToSlug(rowName) + "\");";
