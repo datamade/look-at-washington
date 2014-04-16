@@ -6,12 +6,15 @@
 /* Overwriting State of WA Styles */
 img { margin: 0; }
 
+.rightmenu .col1 { 
+  width: 100%;
+  padding: 0;
+}
 a:visited { color: #a38d4f; }
 
 /* Imports
 =====================================================================*/
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Droid+Serif:400,400italic,700,700italic);
-
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Droid+Serif:400,400italic,700,700italic|Francois+One);
 
 /* Fonts
 ======================================================================*/
@@ -26,7 +29,7 @@ a:hover { text-decoration: underline; color: #a38d4f; }
 
 dl, ol, p, ul, table { margin-bottom: 1.5em; }
 cite, em { font-style: italic; }
-h1 { font-size: 39px; margin: 15px 0; line-height: 1.1;}
+.col1 h1 { font-size: 39px; margin: 15px 0; line-height: 1.1;}
 h1, h2 { color: #13345a; }
 h1, h2, h3, h4, h5, h6, strong { font-weight: bold; }
 h2 { font-size: 25px; line-height: 1.2; margin-bottom: 0.3em; }
@@ -47,14 +50,14 @@ ul { list-style: disc; }
 /* Core layout
 ======================================================================*/
 .clear { clear: both; }
-#page { 
-  width: 850px; 
-  font-size: .9em;
-}
+#page { margin: 0 auto; width: 980px; }
 
 /* Content */
 #content {
   background: #fff;
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.33);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.33);
   clear: both;
 }
 
@@ -168,7 +171,7 @@ ul { list-style: disc; }
   #credit { float: right; text-align: right; }
   
   /* Sharing links */
-  .share { list-style: none; margin: 0; height: 40px;}
+  .share { list-style: none; margin: 0; }
   .share img { float: left; margin-right: 5px; }
   .share li { float: left; font-size: 11px; line-height: 1.1; width: 155px; }
   .share strong { display: block; font-size: 20px; }
@@ -194,7 +197,7 @@ a[class*="icon"] {
 .mute { color: #777; font-size: 13px; }
 
 /* Search */
-#search-form { clear: both; white-space: nowrap; margin: 15px 0;}
+#search-form { text-align: right; white-space: nowrap; margin: 15px 0;}
 #search-form input { font-size: 17px; vertical-align: middle; }
 #search-form input[type=text] { padding: 0.6em; width: 13em; }
 
@@ -223,3 +226,96 @@ input[type=text] {
 
   /* Sparklines */
   .sparkline { height: 100px; margin-bottom: 15px; }
+  
+  /* ALEX CUSTOM STYLES */
+  /* General styles */
+body {
+    margin:0;
+    padding:0;
+    border:0;			/* This removes the border around the viewport in old versions of IE */
+    width:100%;
+    background-repeat:no-repeat;
+    background-color:#eaeaea;
+    min-width:1100px;
+    font-size: 1em; 
+    line-height: 1.4;
+	font-size:90%;
+}
+
+ /* Wrappers */
+#outerwrapper {
+	width:100%;
+	margin:auto;
+	max-width:1100px;
+}
+#innerwrapper {
+	width:100%;
+}
+/*End wrappers*/
+
+#headercontainer {
+   width:100%;
+   float:left;
+   clear:left;
+   margin-bottom:1em;
+}
+#headerlogo {
+   float:left;
+}
+#headersearch {
+    float:right;
+    height:4em;
+    margin:0;
+    text-align:right;
+    color:#666;
+    font-size:x-small;
+    font-family:Verdana, Geneva, sans-serif;
+}
+#headersearch p a {
+    color:#666;
+    font-size:x-small;
+    font-family:Verdana, Geneva, sans-serif;
+    text-decoration:none;
+}
+#headersearch p a:hover {
+    color:#333;
+    text-decoration:underline;
+}
+#headersearch  p a.selected {
+    color:#333;
+    text-decoration:underline;
+}
+/*TOP NAVBAR*/
+.navbar {
+	position: relative;
+	margin-bottom: 20px;
+	overflow: visible;
+}
+
+.navbarinner {
+	min-height: 35px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: #e6930e;
+	clear: both;
+	margin: 0 auto;
+	box-shadow: #555 1px 0px 3px;
+}
+.navbarinner p {
+	margin:0;
+	padding:0 0 0 1em;
+}
+.navbarinner p a {
+	color: #000000;
+	font-family:'Francois One', serif;
+	cursor: pointer;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 35px;
+	font-weight: 400;
+
+}
+.navbar p a:hover {
+	opacity:.75;
+	text-decoration:underline;
+}

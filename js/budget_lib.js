@@ -28,12 +28,12 @@ var BudgetLib = {
 
   //IDs used to reference Fusion Tables, where we store our data
   FusionTableApiKey: "AIzaSyDgYMq5VzeWQdYNpvYfP0W3NuCKYOAB5_Y",
-  BUDGET_TABLE_ID: "1lkIgEa1qFZiBEdxFgwWdIdHMzJ9vQN1nJEK_jcY", //main budget table with Actual/Nominal per Agency per year
+  BUDGET_TABLE_ID: "1h4sjIMfqZy5d8uLCaZQnGq7RdTJevr8p0gD6GTY",//"1lkIgEa1qFZiBEdxFgwWdIdHMzJ9vQN1nJEK_jcY", //main budget table with Actual/Nominal per Agency per year
   FUND_DESCRIPTION_TABLE_ID: "1-lAUWw46nAfziDTfGjKRpRY2L4QKWHC0Lfekz_Q",
   
   title: "State of Washington Budget",
   startYear: 2002,
-  endYear: 2013,
+  endYear: 2015,
 
   // keep track of our state
   viewYear: 2013,  // viewing year

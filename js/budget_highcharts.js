@@ -28,6 +28,7 @@ var BudgetHighcharts = {
         events: {
           click: function() {
             $("#readme").fadeOut("fast");
+            $.cookie("budgetbreakdownreadme", "read", { expires: 7 });
           }
         },
         defaultSeriesType: "area",
@@ -41,7 +42,10 @@ var BudgetHighcharts = {
       legend: {
         backgroundColor: "#ffffff",
         borderColor: "#cccccc",
-        verticalAlign: "top"
+        floating: true,
+        verticalAlign: "top",
+        x: -280,
+        y: 20,
       },
       plotOptions: {
         area: { fillOpacity: 0.25 },
@@ -51,6 +55,7 @@ var BudgetHighcharts = {
             events: {
               click: function() {
                 $("#readme").fadeOut("fast");
+                $.cookie("budgetbreakdownreadme", "read", { expires: 7 });
                 var x = this.x,
                 y = this.y,
                 selected = !this.selected,
